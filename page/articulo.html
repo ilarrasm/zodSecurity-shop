@@ -4,42 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>Titulo de producto</h1> <span>SOLD OUT</span>
-        <img>
+    <header class="header__articulo">
+        <h1>AMD RADEON X5500</h1>
+        <img src="../media/rigprueba.jpg" alt="">
         <span>Precio</span>
     </header>
-   <main>
-       <article>
+   <main class="main__articulo">
+       <article class="main__articulo__data">
             <h2>especificaciones tecnicas</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
                 non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <section>
+            <section class="main__articulo__data__pics">
                 <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
             </section>
        </article>
-       <article>
-            <span>compra segura</span><span>envio a todo el pais</span><span>envio a todo el pais</span>
+       <article class="main__articulo__add">
+           <div class="main__articulo__add__spans">
+               <span>
+                    Compra segura
+               </span>
+               <span>
+                    Envio gratis a todo AMBA
+               </span>
+               <span>
+                    Tu productos en 35 dias 
+               </span>
+           </div>
             <h3>Titulo del producto</h3>
-            <span>precio</span>
-            <span>Agregar al carrito</span>
-        </article>
-        <article>
-            <section>
-                <h3>Rigs</h3>
-                <div>Carrousel</div>
-            </section>
-            <section>
-                <h3>Placas de video</h3>
-                <div>Carrousel</div>
-            </section>
+            <span class="main__articulo__add__price"><span class="main__articulo__add__price__usd">U$S</span>99.99</span>
+            <span class="btn-add">Agregar al carrito</span>
         </article>
    </main>
+   <footer class="footer__articulo">
+    <section class="carrousel-articulo rig-grid">
+        <h3>Rigs</h3>
+        <div>Carrousel</div>
+    </section>
+    <section class="carrousel-articulo video-grid">
+        <h3>Placas de video</h3>
+        <div>Carrousel</div>
+    </section>
+</footer>
 </body>
 </html>

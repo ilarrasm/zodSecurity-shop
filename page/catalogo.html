@@ -4,17 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
     <title>Document</title>
 </head>
 <body>
+    <header class="header">
+        <picture class="logo"><a href="index.html"><img class="logo__img" src="../media/logo.svg" alt=""></a></picture>
+        <nav class="navbar">
+            <ul class="navbar__pages">
+                <li><a href="">INICIO</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+            <ul class="navbar__user">
+                <li><a href=""><img src="../media/icons/cart.svg"></a></li>
+                <li><a href=""><img src="../media/icons/user.svg"></a></li>
+            </ul>
+        </nav>
+    </header>
     <main class="catalogo">
         <article class="catalogo__head">
             <div class="banner">
-                <h1>TU PROXIMA UPGRADE EN 30 DIAS</h1>
+                <h1>TU PROXIMO UPGRADE EN 30 DIAS</h1>
                 <span>Tu compra estara en tu casa en 30 dias</span>
             </div>
-            <section>
-                <span class="categoria-activa"></span>
+            <section class="catalogo__head__categorias">
+                <span class="categoria-activa">Placas de video</span>
                 <a class="categoria-inactiva"href="#">Rigs</a>
                 <select>
                     <option value="">TODOS</option>
@@ -25,18 +40,48 @@
         </article>
         <article class="catalogo__productos">
             <section class="card">
-                <H3 class="card__titulo">TITULO DEL PRODUCTO 
-                    <span class="card__titulo__span">SOLD OUT</span>
-                </H3>
-                <img src="" alt="" class="card__img">
-                <span class="card__precio">U$S 199.99</span>
-                <p class="card__p"></p>
-                <div class="button-card"></div>
-                <a href="">COMPRAR</a>
+                <h3 class="card__titulo">AMD RADEON RX5500</h3> <span class="card__span">SOLD OUT</span>
+                <img src="../media/rigprueba.jpg" alt="" class="card__img">
+                <span class="card__precio"><span class="card__precio__span">U$S</span>199.99</span>
+                <p class="card__p">Lorem ipsum dolor, sit amet consectetur adipisicing
+
+                </p>
+                <a class="btn-card" href="">COMPRAR</a>
+            </section>
+            <section class="card">
+                <h3 class="card__titulo">AMD RADEON RX5500</h3> <span class="card__span">SOLD OUT</span>
+                <img src="../media/rigprueba.jpg" alt="" class="card__img">
+                <span class="card__precio"><span class="card__precio__span">U$S</span>199.99</span>
+                <p class="card__p">Lorem ipsum dolor, sit amet consectetur adipisicing
+
+                </p>
+                <a class="btn-card" href="">COMPRAR</a>
+            </section>
+            <section class="card">
+                <h3 class="card__titulo">AMD RADEON RX5500</h3> <span class="card__span">SOLD OUT</span>
+                <img src="../media/rigprueba.jpg" alt="" class="card__img">
+                <span class="card__precio"><span class="card__precio__span">U$S</span>199.99</span>
+                <p class="card__p">Lorem ipsum dolor, sit amet consectetur adipisicing
+
+                </p>
+                <a class="btn-card" href="">COMPRAR</a>
+            </section>
+            <section class="card">
+                <h3 class="card__titulo">AMD RADEON RX5500</h3> <span class="card__span">SOLD OUT</span>
+                <img src="../media/rigprueba.jpg" alt="" class="card__img">
+                <span class="card__precio"><span class="card__precio__span">U$S</span>199.99</span>
+                <p class="card__p">Lorem ipsum dolor, sit amet consectetur adipisicing
+
+                </p>
+                <a class="btn-card" href="">COMPRAR</a>
             </section>
         </article>
-        <span>-</span> <span>1</span><span>+</span>
-        <span class="elemento-abstracto-1"></span>
     </main>
+    <footer class="categoria-footer">
+        <div class="categoria-page">
+            <span>-</span><span>1</span><span>+</span>
+        </div>
+        <span class="elemento-abstracto-1"></span>
+    </footer>
 </body>
 </html>

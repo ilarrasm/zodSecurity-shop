@@ -8,24 +8,50 @@
     <title>Document</title>
 </head>
 <body>
-    <main class="login">
-        <article class="login__content">
-            <section class="login__content__login">
-                <div class="login__content__login__links">
-                    <a class="login__content__login__links__insite" href="#">registrarse</a><a class="llogin__content__login__links__register" href="">login</a>
+    <main class="register">
+        <article class="register__content">
+            <section class="register__content__login">
+                <div class="register__content__login__links">
+                    <a class="register__content__login__links__insite" href="#">registrarse</a><a class="register__content__login__links__register" href="">login</a>
                 </div>
-                <div class="login__content__login__form">
-                    <label for="user">USUARIO</label>
-                    <input class="input-login"type="text">
-                    <label for="Pass">CONTRASEÑA</label>
-                    <input class="input-login" type="password">
-                    <label>Numero de telefono</label>
-                    <input class="input-login" type="text"> 
-                    <a class="btn-login">Login</a>
+                <div class="register__content__login__form">
+                    <div class="grid-1">
+                        <label for="user">USUARIO</label>
+                        <input class="input-login"type="text" placeholder="USUARIO">
+                    </div>
+                    <div class="grid-2">
+                        <label for="Pass">CONTRASEÑA</label>
+                        <input class="input-login" type="password" placeholder="Contraseña">
+                    </div>
+                    <div class="grid-3">
+                        <label for="name">Nombre</label>
+                        <input class="input-login"type="text" placeholder="Nombre">
+                    </div>
+                    <div class="grid-4">
+                        <label for="fecha">Fecha de nacimiento</label>
+                        <input class="input-login"type="text" placeholder="Apellido">
+                    </div>
+                    <div class="grid-5">
+                        <label for="ciudad">Provicia</label>
+                        <input class="input-login"type="text" placeholder="Provicia">
+                    </div>
+                    <div class="grid-6">
+                        <label for="localidad">Localidad</label>
+                        <input class="input-login"type="text" placeholder="Localidad">
+                    </div>
+                    <div class="grid-7">
+                        <label for="direccion">Direccion</label>
+                        <input class="input-login"type="text" placeholder="Direccion">
+                    </div>
+                    <div class="grid-8">
+                        <label>Numero de telefono</label>
+                        <input class="input-login" type="text" placeholder="NUMERO DE TELEFONO"> 
+                    </div>
+                    <a class="btn-login grid-9">finalizar</a>
                 </div>
             </section>
-            <section class="login__content__rs">
-                <h1 class="login__H1">registrarse</h1>
+            <section class="register__content__rs">
+                <h1 class="register__H1">registrarse</h1>
                 <span class="fb-login">registrarse por fb</span><span class="gl-login">registrarse por google</span>
             </section>
         </article>

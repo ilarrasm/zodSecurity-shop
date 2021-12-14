@@ -1,3 +1,93 @@
+.register
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    height: 100vh
+    background: $black
+    &__H1
+        color: $white
+        font-size: 3em
+    &__content
+        display: flex
+        flex-direction: row-reverse
+        height: 40%
+        width: 70%
+        margin: 5% 0
+        box-shadow: 11px 11px 20px black
+        border-radius: 10px
+        overflow: hidden
+        &__login, &__rs
+            display: flex
+            flex-direction: column
+            padding: 1rem
+            width: 50%
+        &__login
+            background: $white
+            justify-content: space-between
+            &__form
+                display: grid
+                grid-template-columns: repeat(6, 1fr)
+                grid-template-rows: repeat(6, 1fr)
+                grid-column-gap: 5px
+                grid-row-gap: 4px
+                .grid-1
+                    grid-area: 1 / 1 / 2 / 4
+                .grid-2
+                    grid-area: 1 / 4 / 2 / 7
+                .grid-3
+                    grid-area: 2 / 1 / 3 / 4
+                .grid-4
+                    grid-area: 2 / 4 / 3 / 7
+                .grid-5
+                    grid-area: 3 / 1 / 4 / 4
+                .grid-6
+                    grid-area: 3 / 4 / 4 / 7
+                .grid-7
+                    grid-area: 4 / 4 / 5 / 7
+                .grid-8
+                    grid-area: 4 / 1 / 5 / 4
+                .grid-9
+                    grid-area: 5 / 3 / 6 / 5
+                    align-self: center
+                label
+                    display: none
+                    font-size: 1em
+                    padding: 1rem
+                    font-weight: 200
+                input
+                    padding: .2rem
+                    width: 100%
+            &__links
+                display: flex
+                justify-content: flex-end
+                a
+                    font-size: .6em
+                    margin: .3rem
+                    text-decoration: none
+                    color: $white
+                    background: $blueLight
+                    text-transform: uppercase
+                    padding: .4rem 1rem
+        &__rs
+            background: url(../media/background.jpg)
+            background-size: cover
+            background-repeat: no-repeat
+            span
+                color: $white
+            .redesLogin
+                display: flex
+.btn-login
+    background: $black
+    color: $blueLight
+    font-weight: 700
+    text-transform: uppercase
+    font-size: .7em
+    padding: .5rem 1rem
+    margin-top: 1rem
+    border-radius: 10%
+.volver
+    color: $white
 .login
     display: flex
     flex-direction: column
@@ -56,14 +146,3 @@
                 color: $white
             .redesLogin
                 display: flex
-.btn-login
-    background: $black
-    color: $blueLight
-    font-weight: 700
-    text-transform: uppercase
-    font-size: .7em
-    padding: .5rem 1rem
-    margin-top: 1rem
-    border-radius: 10%
-.volver
-    color: $white

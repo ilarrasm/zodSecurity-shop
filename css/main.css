@@ -282,6 +282,99 @@ h1, h2, h3, h4 {
     font-size: 6em;
     color: #2E2E2E; }
 
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #2E2E2E; }
+  .register__H1 {
+    color: whitesmoke;
+    font-size: 3em; }
+  .register__content {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 40%;
+    width: 70%;
+    margin: 5% 0;
+    box-shadow: 11px 11px 20px black;
+    border-radius: 10px;
+    overflow: hidden; }
+    .register__content__login, .register__content__rs {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      width: 50%; }
+    .register__content__login {
+      background: whitesmoke;
+      justify-content: space-between; }
+      .register__content__login__form {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 4px; }
+        .register__content__login__form .grid-1 {
+          grid-area: 1 / 1 / 2 / 4; }
+        .register__content__login__form .grid-2 {
+          grid-area: 1 / 4 / 2 / 7; }
+        .register__content__login__form .grid-3 {
+          grid-area: 2 / 1 / 3 / 4; }
+        .register__content__login__form .grid-4 {
+          grid-area: 2 / 4 / 3 / 7; }
+        .register__content__login__form .grid-5 {
+          grid-area: 3 / 1 / 4 / 4; }
+        .register__content__login__form .grid-6 {
+          grid-area: 3 / 4 / 4 / 7; }
+        .register__content__login__form .grid-7 {
+          grid-area: 4 / 4 / 5 / 7; }
+        .register__content__login__form .grid-8 {
+          grid-area: 4 / 1 / 5 / 4; }
+        .register__content__login__form .grid-9 {
+          grid-area: 5 / 3 / 6 / 5;
+          align-self: center; }
+        .register__content__login__form label {
+          display: none;
+          font-size: 1em;
+          padding: 1rem;
+          font-weight: 200; }
+        .register__content__login__form input {
+          padding: .2rem;
+          width: 100%; }
+      .register__content__login__links {
+        display: flex;
+        justify-content: flex-end; }
+        .register__content__login__links a {
+          font-size: .6em;
+          margin: .3rem;
+          text-decoration: none;
+          color: whitesmoke;
+          background: #0E9FBF;
+          text-transform: uppercase;
+          padding: .4rem 1rem; }
+    .register__content__rs {
+      background: url(../media/background.jpg);
+      background-size: cover;
+      background-repeat: no-repeat; }
+      .register__content__rs span {
+        color: whitesmoke; }
+      .register__content__rs .redesLogin {
+        display: flex; }
+
+.btn-login {
+  background: #2E2E2E;
+  color: #0E9FBF;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .7em;
+  padding: .5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 10%; }
+
+.volver {
+  color: whitesmoke; }
+
 .login {
   display: flex;
   flex-direction: column;
@@ -340,19 +433,6 @@ h1, h2, h3, h4 {
         color: whitesmoke; }
       .login__content__rs .redesLogin {
         display: flex; }
-
-.btn-login {
-  background: #2E2E2E;
-  color: #0E9FBF;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: .7em;
-  padding: .5rem 1rem;
-  margin-top: 1rem;
-  border-radius: 10%; }
-
-.volver {
-  color: whitesmoke; }
 
 .slideshow-container {
   grid-area: 4 / 1 / 5 / 7;

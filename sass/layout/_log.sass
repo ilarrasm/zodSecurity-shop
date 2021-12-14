@@ -56,8 +56,15 @@
                     padding: 1rem
                     font-weight: 200
                 input
-                    padding: .2rem
-                    width: 100%
+                    font-family: 'Exo', italic
+                    padding: 0.5rem 1rem
+                    width: 95%
+                    margin: 5%
+                    font-weight: 100
+                    border-radius: 5px
+                    border: none
+                    color: $white
+                    background: $black
             &__links
                 display: flex
                 justify-content: flex-end
@@ -65,10 +72,10 @@
                     font-size: .6em
                     margin: .3rem
                     text-decoration: none
-                    color: $white
-                    background: $blueLight
+                    color: $blueLight
                     text-transform: uppercase
                     padding: .4rem 1rem
+                    border-radius: 5px
         &__rs
             background: url(../media/background.jpg)
             background-size: cover
@@ -78,8 +85,8 @@
             .redesLogin
                 display: flex
 .btn-login
-    background: $black
-    color: $blueLight
+    background: $blueLight
+    color: $white
     font-weight: 700
     text-transform: uppercase
     font-size: .7em
@@ -97,12 +104,12 @@
     background: $black
     &__H1
         color: $white
-        font-size: 3em
+        font-size: 2em
     &__content
         display: flex
         flex-direction: row-reverse
         height: 30%
-        width: 50%
+        width: 30%
         margin: 5% 0
         box-shadow: 11px 11px 20px black
         border-radius: 10px
@@ -115,29 +122,41 @@
         &__login
             background: $white
             justify-content: space-between
+            border-radius: 5px
             &__form
                 display: flex
                 flex-direction: column
                 align-items: center
                 justify-content: space-between
-                margin-bottom: 60%
+                margin-bottom: 10%
                 label
+                    display: none
                     font-size: 1em
                     padding: .5rem
                     font-weight: 200
                 input
-                    padding: .2rem
+                    font-family: 'Exo', italic
+                    padding: 0.5rem 1rem
+                    width: 95%
+                    margin: 5%
+                    font-weight: 100
+                    border-radius: 5px
+                    border: none
+                    color: $white
+                    background: $black
             &__links
                 display: flex
                 justify-content: flex-end
                 a
+                    font-family: exo, italic
                     font-size: .6em
                     margin: .3rem
                     text-decoration: none
-                    color: $white
-                    background: $blueLight
+                    color: $blueLight
                     text-transform: uppercase
                     padding: .4rem 1rem
+                    border-radius: 5px
+                    font-weight: 600
         &__rs
             background: url(../media/background.jpg)
             background-size: cover
@@ -146,3 +165,4 @@
                 color: $white
             .redesLogin
                 display: flex
+                flex-direction: column

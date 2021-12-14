@@ -201,20 +201,63 @@ h1, h2, h3, h4 {
   display: flex;
   flex-direction: column; }
   .header__articulo h1 {
-    background: #2E2E2E;
-    color: #0E9FBF;
-    font-size: 5em; }
+    display: flex;
+    background: #0E9FBF;
+    color: whitesmoke;
+    font-size: 3em;
+    width: 50%; }
   .header__articulo img {
-    width: 100%;
-    height: 45vh;
-    object-fit: cover; }
+    width: 30%;
+    height: 35vh;
+    object-fit: contain;
+    margin-left: 5%; }
   .header__articulo span {
     display: flex;
     background: #2E2E2E;
     color: whitesmoke;
     font-size: 3em;
     align-items: center;
-    justify-content: flex-end; }
+    width: 50%; }
+  .header__articulo__add {
+    grid-area: 1 / 8 / 7 / 13;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #2E2E2E;
+    margin: 5% 1%;
+    justify-content: space-between;
+    height: 100%; }
+    .header__articulo__add h3 {
+      color: #2E2E2E;
+      font-size: 1.4em;
+      align-self: center; }
+    .header__articulo__add__spans {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.2em;
+      margin: 2rem;
+      font-weight: 400;
+      align-self: center;
+      text-transform: uppercase; }
+      .header__articulo__add__spans span {
+        margin: .5rem; }
+    .header__articulo__add__price {
+      font-size: 2em;
+      display: flex;
+      align-self: center;
+      align-items: flex-end;
+      font-weight: 200; }
+      .header__articulo__add__price__usd {
+        font-weight: 500;
+        font-size: .4em;
+        align-self: center; }
+    .header__articulo__add .btn-add {
+      font-size: 1.2em;
+      padding: 1rem;
+      background: #0E9FBF;
+      color: whitesmoke;
+      align-self: center;
+      margin: 2rem;
+      text-transform: uppercase; }
 
 .main__articulo {
   display: grid;
@@ -233,46 +276,6 @@ h1, h2, h3, h4 {
       width: 80%;
       margin: 1.3rem;
       font-weight: 300;
-      text-transform: uppercase; }
-  .main__articulo__add {
-    grid-area: 1 / 8 / 7 / 13;
-    display: flex;
-    flex-direction: column;
-    border: solid 1px #2E2E2E;
-    margin: 5% 1%;
-    justify-content: space-between;
-    height: 100%; }
-    .main__articulo__add h3 {
-      color: #2E2E2E;
-      font-size: 1.4em;
-      align-self: center; }
-    .main__articulo__add__spans {
-      display: flex;
-      flex-direction: column;
-      font-size: 1.2em;
-      margin: 2rem;
-      font-weight: 400;
-      align-self: center;
-      text-transform: uppercase; }
-      .main__articulo__add__spans span {
-        margin: .5rem; }
-    .main__articulo__add__price {
-      font-size: 2em;
-      display: flex;
-      align-self: center;
-      align-items: flex-end;
-      font-weight: 200; }
-      .main__articulo__add__price__usd {
-        font-weight: 500;
-        font-size: .4em;
-        align-self: center; }
-    .main__articulo__add .btn-add {
-      font-size: 1.2em;
-      padding: 1rem;
-      background: #0E9FBF;
-      color: whitesmoke;
-      align-self: center;
-      margin: 2rem;
       text-transform: uppercase; }
 
 .footer__articulo {
@@ -340,8 +343,15 @@ h1, h2, h3, h4 {
           padding: 1rem;
           font-weight: 200; }
         .register__content__login__form input {
-          padding: .2rem;
-          width: 100%; }
+          font-family: 'Exo', italic;
+          padding: 0.5rem 1rem;
+          width: 95%;
+          margin: 5%;
+          font-weight: 100;
+          border-radius: 5px;
+          border: none;
+          color: whitesmoke;
+          background: #2E2E2E; }
       .register__content__login__links {
         display: flex;
         justify-content: flex-end; }
@@ -349,10 +359,10 @@ h1, h2, h3, h4 {
           font-size: .6em;
           margin: .3rem;
           text-decoration: none;
-          color: whitesmoke;
-          background: #0E9FBF;
+          color: #0E9FBF;
           text-transform: uppercase;
-          padding: .4rem 1rem; }
+          padding: .4rem 1rem;
+          border-radius: 5px; }
     .register__content__rs {
       background: url(../media/background.jpg);
       background-size: cover;
@@ -363,8 +373,8 @@ h1, h2, h3, h4 {
         display: flex; }
 
 .btn-login {
-  background: #2E2E2E;
-  color: #0E9FBF;
+  background: #0E9FBF;
+  color: whitesmoke;
   font-weight: 700;
   text-transform: uppercase;
   font-size: .7em;
@@ -384,12 +394,12 @@ h1, h2, h3, h4 {
   background: #2E2E2E; }
   .login__H1 {
     color: whitesmoke;
-    font-size: 3em; }
+    font-size: 2em; }
   .login__content {
     display: flex;
     flex-direction: row-reverse;
     height: 30%;
-    width: 50%;
+    width: 30%;
     margin: 5% 0;
     box-shadow: 11px 11px 20px black;
     border-radius: 10px;
@@ -401,30 +411,42 @@ h1, h2, h3, h4 {
       width: 50%; }
     .login__content__login {
       background: whitesmoke;
-      justify-content: space-between; }
+      justify-content: space-between;
+      border-radius: 5px; }
       .login__content__login__form {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 60%; }
+        margin-bottom: 10%; }
         .login__content__login__form label {
+          display: none;
           font-size: 1em;
           padding: .5rem;
           font-weight: 200; }
         .login__content__login__form input {
-          padding: .2rem; }
+          font-family: 'Exo', italic;
+          padding: 0.5rem 1rem;
+          width: 95%;
+          margin: 5%;
+          font-weight: 100;
+          border-radius: 5px;
+          border: none;
+          color: whitesmoke;
+          background: #2E2E2E; }
       .login__content__login__links {
         display: flex;
         justify-content: flex-end; }
         .login__content__login__links a {
+          font-family: exo, italic;
           font-size: .6em;
           margin: .3rem;
           text-decoration: none;
-          color: whitesmoke;
-          background: #0E9FBF;
+          color: #0E9FBF;
           text-transform: uppercase;
-          padding: .4rem 1rem; }
+          padding: .4rem 1rem;
+          border-radius: 5px;
+          font-weight: 600; }
     .login__content__rs {
       background: url(../media/background.jpg);
       background-size: cover;
@@ -432,7 +454,8 @@ h1, h2, h3, h4 {
       .login__content__rs span {
         color: whitesmoke; }
       .login__content__rs .redesLogin {
-        display: flex; }
+        display: flex;
+        flex-direction: column; }
 
 .slideshow-container {
   grid-area: 4 / 1 / 5 / 7;

@@ -293,12 +293,12 @@ h1, h2, h3, h4 {
   height: 100vh;
   background: #2E2E2E; }
   .register__H1 {
-    color: whitesmoke;
+    color: #0E9FBF;
     font-size: 3em; }
   .register__content {
     display: flex;
     flex-direction: row-reverse;
-    height: 40%;
+    height: 60%;
     width: 70%;
     margin: 5% 0;
     box-shadow: 11px 11px 20px black;
@@ -347,11 +347,13 @@ h1, h2, h3, h4 {
           padding: 0.5rem 1rem;
           width: 95%;
           margin: 5%;
-          font-weight: 100;
+          font-weight: 600;
+          text-transform: uppercase;
           border-radius: 5px;
           color: #2E2E2E;
           background: whitesmoke;
-          border: solid 1px #0E9FBF; }
+          border: none;
+          border-bottom: solid 1px #2E2E2E; }
       .register__content__login__links {
         display: flex;
         justify-content: flex-end; }
@@ -373,14 +375,21 @@ h1, h2, h3, h4 {
         display: flex; }
 
 .btn-login {
-  background: #0E9FBF;
-  color: whitesmoke;
+  color: #0E9FBF;
   font-weight: 700;
   text-transform: uppercase;
   font-size: .7em;
   padding: .5rem 1rem;
   margin-top: 1rem;
-  border-radius: 10%; }
+  border-radius: 10%;
+  border-bottom: solid 1px #5C96CB;
+  text-align: center;
+  text-decoration: none; }
+  .btn-login:hover {
+    background: #0E9FBF;
+    color: whitesmoke;
+    transition: .9s;
+    border-bottom: solid 1px whitesmoke; }
 
 .volver {
   color: whitesmoke; }
@@ -429,12 +438,12 @@ h1, h2, h3, h4 {
           padding: 0.5rem 1rem;
           width: 95%;
           margin: 5%;
-          font-weight: 300;
+          font-weight: 500;
           border-radius: 5px;
           border: none;
+          border-bottom: solid 1px #5C96CB;
           color: #2E2E2E;
-          background: whitesmoke;
-          box-shadow: 0 0 4px #0E9FBF; }
+          background: whitesmoke; }
       .login__content__login__links {
         display: flex;
         justify-content: flex-end; }

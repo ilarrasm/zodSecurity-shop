@@ -6,12 +6,12 @@
     height: 100vh
     background: $black
     &__H1
-        color: $white
+        color: $blueLight
         font-size: 3em
     &__content
         display: flex
         flex-direction: row-reverse
-        height: 40%
+        height: 60%
         width: 70%
         margin: 5% 0
         box-shadow: 11px 11px 20px black
@@ -60,11 +60,13 @@
                     padding: 0.5rem 1rem
                     width: 95%
                     margin: 5%
-                    font-weight: 100
+                    font-weight: 600
+                    text-transform: uppercase
                     border-radius: 5px
                     color: $black
                     background: $white
-                    border: solid 1px $blueLight
+                    border: none
+                    border-bottom: solid 1px $black
             &__links
                 display: flex
                 justify-content: flex-end
@@ -85,14 +87,21 @@
             .redesLogin
                 display: flex
 .btn-login
-    background: $blueLight
-    color: $white
+    color: $blueLight
     font-weight: 700
     text-transform: uppercase
     font-size: .7em
     padding: .5rem 1rem
     margin-top: 1rem
     border-radius: 10%
+    border-bottom: solid 1px $blue
+    text-align: center
+    text-decoration: none
+    &:hover
+        background: $blueLight
+        color: $white
+        transition: .9s
+        border-bottom: solid 1px $white
 .volver
     color: $white
 .login
@@ -139,12 +148,12 @@
                     padding: 0.5rem 1rem
                     width: 95%
                     margin: 5%
-                    font-weight: 300
+                    font-weight: 500
                     border-radius: 5px
                     border: none
+                    border-bottom: solid 1px $blue
                     color: $black
                     background: $white
-                    box-shadow: 0 0 4px $blueLight
             &__links
                 display: flex
                 justify-content: flex-end

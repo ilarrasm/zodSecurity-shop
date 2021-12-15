@@ -62,7 +62,7 @@
                     margin: 5%
                     font-weight: 600
                     text-transform: uppercase
-                    border-radius: 5px
+                    border-radius: 0 0px 0px 5px
                     color: $black
                     background: $white
                     border: none
@@ -84,8 +84,12 @@
             background-repeat: no-repeat
             span
                 color: $white
-            .redesLogin
-                display: flex
+.redesLogin
+    display: flex
+    height: 100%
+    align-items: center
+    justify-content: space-around
+    text-align: center
 .btn-login
     color: $blueLight
     font-weight: 700
@@ -112,13 +116,13 @@
     height: 100vh
     background: $black
     &__H1
-        color: $white
+        color: $black
         font-size: 2em
     &__content
         display: flex
         flex-direction: row-reverse
-        height: 30%
-        width: 30%
+        height: 40%
+        width: 50%
         margin: 5% 0
         box-shadow: 11px 11px 20px black
         border-radius: 10px
@@ -144,16 +148,7 @@
                     padding: .5rem
                     font-weight: 200
                 input
-                    font-family: 'Exo', italic
-                    padding: 0.5rem 1rem
-                    width: 95%
-                    margin: 5%
-                    font-weight: 500
-                    border-radius: 5px
-                    border: none
-                    border-bottom: solid 1px $blue
-                    color: $black
-                    background: $white
+                 
             &__links
                 display: flex
                 justify-content: flex-end
@@ -175,4 +170,21 @@
                 color: $white
             .redesLogin
                 display: flex
-                flex-direction: column
+                flex-direction: row
+                height: 100%
+                justify-content: center
+                align-items: center
+                text-align: center
+
+.input-login
+    font-family: 'Exo', italic
+    padding: 0.5rem 1rem
+    width: 95%
+    margin: 5%
+    font-weight: 500
+    border: none
+    border-bottom: solid 1px $blue
+    border-radius: 5px 0px 5px 0px
+    border-left: solid 5px $blue
+    color: $black
+    background: $white

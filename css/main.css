@@ -21,6 +21,26 @@
   height: 70px;
   width: 140px; }
 
+.gl-login {
+  display: flex;
+  width: 100%;
+  align-self: center;
+  align-items: center; }
+  .gl-login__span {
+    font-size: 1em;
+    color: #2E2E2E;
+    margin-left: 3%; }
+
+.fb-login {
+  display: flex;
+  width: 100%;
+  align-self: center;
+  align-items: center; }
+  .fb-login__span {
+    font-size: 1em;
+    color: #2E2E2E;
+    margin-left: 3%; }
+
 body {
   font-family: "Exo", sans serif; }
 
@@ -365,6 +385,9 @@ h1, h2, h3, h4 {
   padding: .2rem .5rem;
   box-shadow: 6px 4px 10px #2E2E2E; }
 
+.userLog {
+  overflow: hidden; }
+
 .register {
   display: flex;
   flex-direction: column;
@@ -398,7 +421,7 @@ h1, h2, h3, h4 {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(6, 1fr);
         grid-column-gap: 5px;
-        grid-row-gap: 4px; }
+        grid-row-gap: 1px; }
         .register__content__login__form .grid-1 {
           grid-area: 1 / 1 / 2 / 4; }
         .register__content__login__form .grid-2 {
@@ -416,7 +439,7 @@ h1, h2, h3, h4 {
         .register__content__login__form .grid-8 {
           grid-area: 4 / 1 / 5 / 4; }
         .register__content__login__form .grid-9 {
-          grid-area: 5 / 6 / 6 / 7;
+          grid-area: 5 / 6 / 7 / 7;
           align-self: center; }
         .register__content__login__form label {
           display: none;
@@ -539,8 +562,6 @@ h1, h2, h3, h4 {
 
 .fb-login, .gl-login {
   color: whitesmoke;
-  background: #233d55;
-  font-size: 1em;
   margin: 0 1rem;
   text-transform: uppercase; }
 
@@ -558,8 +579,8 @@ h1, h2, h3, h4 {
   text-align: right; }
 
 .redesLogin {
+  grid-area: 5 / 1 / 7 / 4;
   display: flex;
-  height: 100%;
   align-items: center;
   justify-content: space-around;
   text-align: center; }
@@ -570,7 +591,6 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
   font-size: .7em;
   padding: .5rem 1rem;
-  margin-top: 1rem;
   border-radius: 10%;
   border-bottom: solid 1px #233d55;
   text-align: center;
@@ -583,7 +603,12 @@ h1, h2, h3, h4 {
 
 .volver {
   color: whitesmoke;
-  z-index: 1; }
+  z-index: 1;
+  margin: 1rem; }
+
+.fa-facebook-square, .fa-google {
+  font-size: 1.3rem;
+  color: #2E2E2E; }
 
 .slideshow-container {
   grid-area: 4 / 1 / 5 / 7;

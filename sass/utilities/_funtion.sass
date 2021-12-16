@@ -7,3 +7,14 @@ $pagos: paypal coinpayments
         background-repeat: no-repeat
         height: 70px
         width: 140px
+$redes: gl fb
+@each $i in $redes
+    .#{$i}-login
+        display: flex
+        width: 100%
+        align-self: center
+        align-items: center
+        &__span
+            font-size: 1em
+            color: $black
+            margin-left: 3%

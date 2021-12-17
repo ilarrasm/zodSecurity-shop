@@ -1,0 +1,33 @@
+.catalogo
+    &__head
+        background: $blue
+        color: $white
+        &__categorias
+            font-size: 3em
+            .categoria-activa
+                background: $white
+                color: $blue
+                padding: 1rem
+                border-radius: 0 50px 0 0
+                text-transform: uppercase
+                font-weight: 900
+            .categoria-inactiva
+                color: $white
+                text-decoration: none
+                text-transform: uppercase
+    &__productos
+        display: flex
+        flex-wrap: wrap
+        padding: 2rem
+.banner
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 20vh
+    padding: 2rem
+    h1
+        font-size: 4em
+    span
+        font-size: 2em
+        margin-left: .5rem
+        font-weight: 100

@@ -1,0 +1,175 @@
+.articulo__container
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: 3fr
+.aside
+    grid-area: 1 / 3 / 2 / 4
+    &__articulo
+        &__mediosDePago
+            margin: 1rem
+            display: flex
+            justify-content: space-evenly
+            justify-items: center
+        &__H1
+            font-style: italic
+            display: flex
+            color: $black
+            font-size: 3em
+            letter-spacing: .5rem
+        &__H2
+            display: flex
+            font-size: 2.2rem
+            font-style: italic
+            color: $blue
+            word-spacing: .2rem
+            letter-spacing: .1rem
+            align-self: center
+            font-weight: 300
+            border-radius: 0px 0px 15px 0px
+            border-bottom: solid 5px $blue
+            padding: 0 .5rem
+            margin: 1rem
+        &__add
+            grid-area: 1 / 2 / 3 / 3
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            width: 100%
+            &__spans
+                display: flex
+                flex-direction: column
+                font-size: 1em
+                font-weight: 400
+                align-self: flex-start
+                text-transform: uppercase
+                span
+                    padding: 1rem
+                    color: $blue
+                    margin: 0 .2rem
+                    border-radius: 30px 0 10px 30px
+            &__price
+                display: flex
+                font-weight: 500
+                justify-content: center
+                margin: .7rem 0
+                padding: .1rem 1rem
+                position: absolute
+                right: 37%
+                top: 60%
+                background: $black
+                border: solid 5px #14141480
+                width: 20%
+                border-radius: 50px 50px 50px 1px
+                &__n
+                    display: flex
+                    font-size: 2.8em
+                    color: $white
+                    align-self: flex-start
+                &__usd
+                    display: flex
+                    font-weight: 200
+                    font-size: 1em
+                    align-self: center
+                    color: $black
+            &__shop
+                display: flex
+                justify-content: space-between
+.main__articulo
+    grid-area: 1 / 1 / 2 / 3
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: repeat(6, 1fr)
+    &__data
+        grid-area: 1 / 1 / 13 / 8 
+        &__H2
+            text-transform: uppercase
+            font-size: 7rem
+            font-weight: 100
+            font-style: italic
+            letter-spacing: .1rem
+            word-spacing: .2rem
+            color: $blackBold
+            padding: .2rem .5rem
+            margin: 1%
+            width: 90%
+
+        &__p
+            font-size: 1.3em
+            width: 80%   
+            margin: 5%
+            font-weight: 300
+            border-radius: 10px 0 10px 0px
+            letter-spacing: .3rem
+            line-height: 2.5rem
+    &__contenido
+        grid-area: 1 / 1 / 3 / 2
+        width: 100%
+        &__img
+            height: 600px
+            width: 100%
+            object-fit: cover
+        &__pics 
+            display: flex
+            justify-content: space-between
+            img
+                height: 105px
+                margin: 1% 1%
+                object-fit: contain
+.footer__articulo
+    display: flex
+    flex-direction: column
+    h3
+        font-size: 6em
+        color: $black
+.price
+    display: flex
+    align-self: flex-start
+    align-items: flex-start
+    font-weight: 500
+    padding: .1rem 1rem
+    background: $black
+    margin-left: 5%
+    &__n
+        font-size: 2em
+        color: $white
+    &__usd
+        display: flex
+        font-weight: 200
+        font-size: .6em
+        align-self: center
+        justify-content: center
+        color: $white
+        margin-right: .6rem
+.contenedor-flex-row
+    display: flex
+    flex-direction: row
+.btn-add
+    font-size: 1.2em
+    padding: 1rem 3rem 1rem 1rem
+    background: $black
+    color: $white
+    align-self: center
+    margin: 2rem 0
+    text-transform: uppercase
+    transition: background .7s
+    &:hover
+        background: $blueLight
+        filter: drop-shadow(0 0 3px $blueLight)
+.carrousel-articulo
+    display: flex
+    flex-direction: column
+    h3
+        font-size: 3em
+        background: $black
+.fa-star
+    color: $black
+    font-size: 1.8rem
+    &:hover
+        color: $blueLight
+        filter: drop-shadow(0 0 3px $blueLight)
+.fa-calendar, .fa-truck, .fa-shield-alt
+    font-size: 1.2rem
+    color: $white
+    background: $blueLight
+    padding: 1rem
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%)
+    border-radius: 20px

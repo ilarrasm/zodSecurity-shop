@@ -15,22 +15,27 @@
   animation-name: fade .3s linear
 //Articulo
 .carrousel-articulo
-    width: 90%
-    margin: 5%    
+    width: 100%
+    margin: 2% 0    
     overflow: hidden
     &__H2
-        font-size: 5rem
-        color: $black
-        width: 50%
+        font-size: 3.6rem
+        background: $black
+        width: 95%
         position: relative
         z-index: 2
         letter-spacing: 2rem
-        margin: 7% 1rem
-
+        margin: 4% 0 3% 0%
+        border-radius: 0px 0px 555px 0px
+        font-weight: 100
+        font-style: italic
+        padding: 1rem
+        text-shadow: 0 0 11px $blueLight 
 .slideshow-articulo
     display: flex
     flex-flow: row nowrap
     width: 300%
+    margin-left: 5%
     img
         width: calc( 100% / 2  - 2em)
         min-height: 10vh
@@ -38,9 +43,27 @@
         object-position: 50% 50%
         margin: 2rem
     &__card
+        &::before
+            content: ""
+            height: 100%
+            width: 0%
+            position: absolute
+            background: $black
+            top: 0
+            left: 0
+            z-index: 55
+        &:hover > &::before
+            height: 100%
+            width: 100%
         &__H3
-            font-size: 2rem
+            font-size: 1rem
             color: $black
+            position: relative
+            z-index: 56
+        &__p
+            position: relative
+            z-index: 56
+            
 .fa-grip-lines
     font-size: 3rem
     color: $blue
@@ -96,11 +119,11 @@
     animation-name: zoom
     animation-duration: 0.6s
 @keyframes zoom 
-  from 
-      transform:scale(0)
-  to 
-      transform:scale(1)
-.close
+    0% 
+        transform: scale(0)
+    100% 
+        transform: scale(1)
+.close 
     position: absolute
     top: 15px
     right: 35px

@@ -570,31 +570,32 @@ h1, h2, h3, h4 {
     margin: .7rem 0;
     padding: .1rem 1rem;
     position: absolute;
-    right: 30%;
+    right: 40%;
     top: 50%;
-    width: 40%;
-    border-radius: 50px 50px 50px 1px; }
+    width: 30%;
+    border-radius: 50px 50px 50px 1px;
+    background: #2E2E2E; }
     .main__articulo__price .precioFinal {
       font-size: 2em;
       text-transform: uppercase;
-      color: #2E2E2E;
+      color: whitesmoke;
       align-self: center;
       margin: 0 1rem;
       font-weight: 200; }
     .main__articulo__price__n {
       display: flex;
       font-size: 2.8em;
-      color: #2E2E2E;
       align-self: flex-start;
       letter-spacing: .2rem;
-      font-weight: 700; }
+      font-weight: 700;
+      color: whitesmoke; }
     .main__articulo__price__usd {
       display: flex;
       font-weight: 500;
       font-size: 1em;
       align-self: flex-end;
       margin-bottom: .7rem;
-      color: #2E2E2E; }
+      color: whitesmoke; }
   .main__articulo__cat-a {
     color: #233d55;
     margin: 1rem; }
@@ -603,12 +604,12 @@ h1, h2, h3, h4 {
     .main__articulo__contenido__img {
       height: 600px;
       width: 100%;
-      object-fit: cover; }
+      object-fit: contain; }
     .main__articulo__contenido__pics {
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-evenly; }
       .main__articulo__contenido__pics img {
-        height: 105px;
+        height: 55px;
         margin: 1% 1%;
         object-fit: contain; }
 

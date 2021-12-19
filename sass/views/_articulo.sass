@@ -73,31 +73,32 @@ $pagos: paypal coinpayments
         margin: .7rem 0
         padding: .1rem 1rem
         position: absolute
-        right: 30%
+        right: 40%
         top: 50%
-        width: 40%
+        width: 30%
         border-radius: 50px 50px 50px 1px
+        background: $black
         .precioFinal
             font-size: 2em
             text-transform: uppercase
-            color: $black
+            color: $white
             align-self: center
             margin: 0 1rem
             font-weight: 200
         &__n
             display: flex
             font-size: 2.8em
-            color: $black
             align-self: flex-start
             letter-spacing: .2rem
             font-weight: 700
+            color: $white
         &__usd
             display: flex
             font-weight: 500
             font-size: 1em
             align-self: flex-end
             margin-bottom: .7rem
-            color: $black
+            color: $white
     &__cat
         &-a
             color: $blue
@@ -107,12 +108,12 @@ $pagos: paypal coinpayments
         &__img
             height: 600px
             width: 100%
-            object-fit: cover
+            object-fit: contain
         &__pics 
             display: flex
-            justify-content: space-between
+            justify-content: space-evenly
             img
-                height: 105px
+                height: 55px
                 margin: 1% 1%
                 object-fit: contain
 .footer__articulo

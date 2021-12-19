@@ -52,10 +52,16 @@
             <span class="main__articulo__price__usd">USD</span>
         </div>
         <article class="main__articulo__contenido">
-            <img class="main__articulo__contenido__img" src="../media/pruebapic.webp" alt="">
-            <img class="main__articulo__contenido__img" src="../media/productos/producto1.jpg" alt="" onclick="currentSlide(2)">
-            <img class="main__articulo__contenido__img" src="../media/productos/producto2.webp" alt="" onclick="currentSlide(3)">
-            <img class="main__articulo__contenido__img" src="../media/productos/producto3.jpg" alt="" onclick="currentSlide(4)">
+            <img  class="main__articulo__contenido__img myImg" src="../media/pruebapic.webp" alt="">
+            <img class="main__articulo__contenido__img myImg" src="../media/productos/producto1.jpg" alt="">
+            <img class="main__articulo__contenido__img myImg" src="../media/productos/producto2.webp" alt="">
+            <img class="main__articulo__contenido__img myImg" src="../media/productos/producto3.jpg" alt="">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01"> 
+                <div id="caption"></div>
+            </div>
             <div class="main__articulo__contenido__pics">
                 <img src="../media/pruebapic.webp" alt="" onclick="currentSlide(1)">
                 <img src="../media/productos/producto1.jpg" alt="" onclick="currentSlide(2)">

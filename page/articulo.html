@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <title>AMD RADEON X5500 | ZOD SECURITY</title>
 </head>
@@ -13,10 +14,7 @@
             <section class="aside__articulo__add">
                 <div>
                     <h1 class="aside__articulo__H1">AMD RADEON X5500</h1>
-                    <span class="aside__articulo__add__price">
-                        <span class="aside__articulo__add__price__n">999.9</span>
-                        <span class="aside__articulo__add__price__usd">USD</span>
-                    </span>
+
                     <div class="aside__articulo__add__shop">
                         <span class="btn-add"><i class="fas fa-cart-plus"></i>Agregar al carrito</span>
                         <i class="far fa-star"></i>
@@ -25,15 +23,15 @@
                 <div class="aside__articulo__add__spans">
                     <span>
                         <i class="fas fa-shield-alt"></i>
-                        Compra segura
+                        <span class="info">segura</span> 
                     </span>
                     <span>
                         <i class="fas fa-truck"></i>
-                        Envio gratis a todo AMBA
+                        <span class="info">Envio gratis a todo AMBA</span>
                     </span>
                     <span>
                         <i class="far fa-calendar"></i>
-                        Tu productos en 35 dias 
+                        <span class="info">Tu productos en 35 dias</span> 
                     </span>
                 </div>
                 <h2 class="aside__articulo__H2">MEDIOS DE PAGO</h2>
@@ -42,34 +40,59 @@
                     <span class="ico-coinpayments"></span>
                 </div>
             </section>
-            <section class="carrousel-articulo rig-grid">
-                <h3>Rigs</h3>
-                <div>Carrousel</div>
-            </section>
-            <section class="carrousel-articulo video-grid">
-                <h3>Placas de video</h3>
-                <div>Carrousel</div>
-            </section>
         </article>
     </aside>
    <main class="main__articulo">
-       <div>
-           <a href="">Placa de video</a><a href=""> AMD</a>
+       <div class="main__articulo__cat">
+           <a class="main__articulo__cat-a" href="">Placa de video</a>><a class="main__articulo__cat-a" href="">AMD</a>
        </div>
+       <div class="main__articulo__price">
+            <span class="precioFinal">Precio final</span>
+            <span class="main__articulo__price__n">999.9</span>
+            <span class="main__articulo__price__usd">USD</span>
+        </div>
         <article class="main__articulo__contenido">
             <img class="main__articulo__contenido__img" src="../media/pruebapic.webp" alt="">
             <div class="main__articulo__contenido__pics"><img src="../media/pruebapic.webp" alt=""><img src="../media/pruebapic.webp" alt=""><img src="../media/pruebapic.webp" alt=""><img src="../media/pruebapic.webp" alt=""></div>
         </article>
-        <article class="main__articulo__data">
-            <h2 class="main__articulo__data__H2">Radeon RX 5500 XT</h2>
-            <p class="main__articulo__data__p">
+   </main>
+   <footer class="footer__articulo">
+        <article class="footer__articulo__data">
+            <h2 class="footer__articulo__data__H2">Radeon RX 5500 XT</h2>
+            <p class="footer__articulo__data__p">
                 La nueva arquitectura RDNA para juegos
                 Radeon RX 5500 XT ofrece nuevas unidades de procesamiento, instrucciones renovadas y perfeccionadas para efectos visuales, y jerarquía de caché de varios niveles para reducir la latencia considerablemente y ejecutar juegos con una gran respuesta.
             </p>
-       </article>     
-   </main>
-   <footer class="footer__articulo">
+        </article>
+        <!-- Slideshow container -->
+        <div class="carrousel-articulo">
+            <div class="slideshow slideshow-articulo">
+                <!-- Full-width images with number and caption text -->
+                    <img src="../media/productos/producto1.jpg">
+                    <img src="../media/productos/producto2.webp">
+                    <img src="../media/productos/producto3.jpg">
+                    <img src="../media/productos/producto1.jpg">
+                    <img src="../media/productos/producto2.webp">
+                    <img src="../media/productos/producto3.jpg">
+                    <img src="../media/productos/producto1.jpg">
+                    <img src="../media/productos/producto2.webp">
+                    <img src="../media/productos/producto3.jpg">
+                <!-- Next and previous buttons -->
+            </div> 
+            <div class="puntos">
+                <a class="punto activo"><i class="fas fa-circle"></i></a>
+                <a class="punto"><i class="fas fa-circle"></i></a>
+                <a class="punto"><i class="fas fa-circle"></i></a>
+                <a class="punto"><i class="fas fa-circle"></i></a>
+                <a class="punto"><i class="fas fa-circle"></i></a>
+                <a class="punto"><i class="fas fa-circle"></i></a>
+                <a class="punto"><i class="fas fa-circle"></i></a>
+                <a class="punto"><i class="fas fa-circle"></i></a>
+                <a class="punto"><i class="fas fa-circle"></i></a>
+            </div>
+        </div>
     </footer>
     <script src="https://kit.fontawesome.com/9688e54410.js" crossorigin="anonymous"></script>
+    <script src="../script/app.js"></script>
 </body>
 </html>

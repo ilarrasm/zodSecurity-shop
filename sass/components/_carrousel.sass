@@ -5,9 +5,44 @@
 .mySlides img
     z-index: 4
     height: 5vh
+.prev, .next
+    margin: 1rem
+    -webkit-animation-duration: 2s
+    justify-self: center
+    align-self: center
 .fade 
   -webkit-animation-name: fade
-  -webkit-animation-duration: 2s
   animation-name: fade .3s linear
-
-
+//Articulo
+.carrousel-articulo
+    width: 100%    
+    overflow: hidden
+.slideshow-articulo
+    display: flex
+    flex-flow: row nowrap
+    width: 300%
+    img
+        width: calc( 100% / 2  - 2em)
+        min-height: 10vh
+        object-fit: contain
+        object-position: 50% 50%
+        margin: 2rem
+.fa-circle
+    font-size: 1.6rem
+    color: $blue
+    margin: 1rem
+    opacity: .7
+    transition: 1s
+    &:hover
+        color: $blueLight
+        text-shadow: 0 0 3px
+.carrousel-articulo .slideshow-articulo
+    transform: translateX(0%)
+    transition: .91s
+.activo
+    .fa-circle
+        color: $blueLight
+        text-shadow: 0 0 10px 
+.puntos
+    display: flex
+    justify-content: center

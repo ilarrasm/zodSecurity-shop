@@ -1,12 +1,3 @@
-$pagos: paypal coinpayments
-@each $sapo in $pagos
-    .ico-#{$sapo}
-        display: flex
-        background-image: url(../media/icons/#{$sapo}.svg)
-        background-size: contain
-        background-repeat: no-repeat
-        height: 70px
-        width: 140px
 $redes: gl fb
 @each $i in $redes
     .#{$i}-login

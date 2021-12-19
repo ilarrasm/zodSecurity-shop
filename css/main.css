@@ -326,8 +326,16 @@ h1, h2, h3, h4 {
   animation-name: fade .3s linear; }
 
 .carrousel-articulo {
-  width: 100%;
+  width: 90%;
+  margin: 5%;
   overflow: hidden; }
+  .carrousel-articulo__H2 {
+    font-size: 5rem;
+    color: #2E2E2E;
+    width: 50%;
+    position: relative;
+    z-index: 2;
+    letter-spacing: 2rem; }
 
 .slideshow-articulo {
   display: flex;
@@ -338,7 +346,8 @@ h1, h2, h3, h4 {
     min-height: 10vh;
     object-fit: contain;
     object-position: 50% 50%;
-    margin: 2rem; }
+    margin: 2rem;
+    cursor: pointer; }
 
 .fa-circle {
   font-size: 1.6rem;
@@ -627,7 +636,7 @@ h1, h2, h3, h4 {
     right: 40%;
     top: 50%;
     width: 30%;
-    border-radius: 50px 50px 50px 1px;
+    border-radius: 50px 1px 50px 1px;
     background: #2E2E2E; }
     .main__articulo__price .precioFinal {
       font-size: 2em;

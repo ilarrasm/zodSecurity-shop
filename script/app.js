@@ -1,8 +1,9 @@
 'use strict'
 
-const grande = document.querySelector('.slideshow-articulo')
-const punto = document.querySelectorAll('.punto')
-
+const grandeUno = document.querySelector('.slideshow-articulo-1')
+const puntoUno = document.querySelectorAll('.punto-1')
+const grandeDos = document.querySelector('.slideshow-articulo-2')
+const puntoDos = document.querySelectorAll('.punto-2')
 // Cuando CLICK en punto
     // Saber la posición de ese punto
     // Aplicar un transform translateX al grande
@@ -10,9 +11,9 @@ const punto = document.querySelectorAll('.punto')
     // AÑADIR la clase activo al punto que hemos hecho CLICK
 
 // Recorrer TODOS los punto
-punto.forEach( ( cadaPunto , i )=> {
+puntoUno.forEach( ( cadaPunto , i )=> {
     // Asignamos un CLICK a cadaPunto
-    punto[i].addEventListener('click',()=>{
+    puntoUno[i].addEventListener('click',()=>{
 
         // Guardar la posición de ese PUNTO
         let posicion  = i
@@ -20,17 +21,40 @@ punto.forEach( ( cadaPunto , i )=> {
         let operacion = posicion * -5
 
         // MOVEMOS el grand
-        grande.style.transform = `translateX(${ operacion }%)`
+        grandeUno.style.transform = `translateX(${ operacion }%)`
         // Recorremos TODOS los punto
-        punto.forEach( ( cadaPunto , i )=>{
+        puntoUno.forEach( ( cadaPunto , i )=>{
             // Quitamos la clase ACTIVO a TODOS los punto
-            punto[i].classList.remove('activo')
+            puntoUno[i].classList.remove('activo')
         })
         // Añadir la clase activo en el punto que hemos hecho CLICK
-        punto[i].classList.add('activo')
+        puntoUno[i].classList.add('activo')
 
     })
 })
+//////////////
+puntoDos.forEach( ( cadaPunto , i )=> {
+  // Asignamos un CLICK a cadaPunto
+  puntoDos[i].addEventListener('click',()=>{
+
+      // Guardar la posición de ese PUNTO
+      let posicion  = i
+      // Calculando el espacio que debe DESPLAZARSE el GRANDE
+      let operacion = posicion * -5
+
+      // MOVEMOS el grand
+      grandeDos.style.transform = `translateX(${ operacion }%)`
+      // Recorremos TODOS los punto
+      puntoDos.forEach( ( cadaPunto , i )=>{
+          // Quitamos la clase ACTIVO a TODOS los punto
+          puntoDos[i].classList.remove('activo')
+      })
+      // Añadir la clase activo en el punto que hemos hecho CLICK
+      puntoDos[i].classList.add('activo')
+
+  })
+})
+////////////////
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -60,19 +84,33 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 } 
 
-// Get the modal
+;
+//
+//MODALL
 var modal = document.getElementById("myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
+var imgs = document.getElementsByClassName("myImg");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
+
+for(let i=0; i<imgs.length;i++){
+
+  imgs[i].onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
 }
 
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 

@@ -15,8 +15,17 @@
   animation-name: fade .3s linear
 //Articulo
 .carrousel-articulo
-    width: 100%    
+    width: 90%
+    margin: 5%    
     overflow: hidden
+    &__H2
+        font-size: 5rem
+        color: $black
+        width: 50%
+        position: relative
+        z-index: 2
+        letter-spacing: 2rem
+
 .slideshow-articulo
     display: flex
     flex-flow: row nowrap
@@ -27,6 +36,7 @@
         object-fit: contain
         object-position: 50% 50%
         margin: 2rem
+        cursor: pointer
 .fa-circle
     font-size: 1.6rem
     color: $blue

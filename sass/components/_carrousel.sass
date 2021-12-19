@@ -20,7 +20,7 @@
     overflow: hidden
     &__H2
         font-size: 3.6rem
-        background: $black
+        color: $black
         width: 95%
         position: relative
         z-index: 2
@@ -30,7 +30,6 @@
         font-weight: 100
         font-style: italic
         padding: 1rem
-        text-shadow: 0 0 11px $blueLight 
 .slideshow-articulo
     display: flex
     flex-flow: row nowrap
@@ -41,7 +40,7 @@
         min-height: 10vh
         object-fit: contain
         object-position: 50% 50%
-        margin: 2rem
+        max-height: 40vh
     &__card
         &::before
             content: ""
@@ -61,8 +60,17 @@
             position: relative
             z-index: 56
         &__p
+            background: $black
+            color: $white
             position: relative
+            top: -3%
+            right: 50%
             z-index: 56
+            padding: 1rem
+            font-weight: 700
+            text-transform: uppercase
+            font-style: italic
+            font-size: .6rem
             
 .fa-grip-lines
     font-size: 3rem

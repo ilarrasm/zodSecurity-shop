@@ -1,53 +1,47 @@
 .card
+    border-radius: 15px
+    overflow: hidden
     &__titulo
-        color: $blue
+        color: $black
         z-index: 1
         position: relative
-        font-size: 1.7em
-        font-weight: 700
-        margin: 1rem 0
-        margin-left: .5rem 
-        &::after
-           content: ""
-           background: #181717
-           width: 100%
-           height: 100%
-           margin-left: 5% 
-           clip-path: polygon(0 0, 100% 0, 87% 100%, 0 77%)
-           position: absolute
-           top: 0
-           left: 0
-           z-index: -1
+        font-size: 1.3em
+        font-weight: 800
     &__span
-        background: linear-gradient(180deg, #0E9FBF 0%, #0A768D 784.69%)
-        font-size: 1em
-        font-weight: 600
+        display: flex
+        background: $blueLight
+        font-size: .7em
+        font-weight: 400
         color: $white
-        padding-left: 1.5rem 
-        border-radius: 50px 0px 50px 0px
-        transform: rotatez(-5deg)
+        padding: .3rem
+        border-radius: 10px 10px 10px 10px
+        align-self: center
+        justify-self: center
+        text-align: center
+        width: 70%
     &__img
     &__precio
-        font-size: 2.4em
+        font-size: 1.6em
         color: $white
         font-weight: 900
-        align-self: center
+        align-self: flex-start
         position: relative
         z-index: 1
-        align-items: flex-end
+        padding: .3rem
         &__span
             font-size: .3em
             align-self: flex-end
         &::before
             content: ""
-            background: $black
-            height: 110%
-            width: 110%
+            background: $blueLight
+            height: 100%
+            width: 100%
             position: absolute
-            bottom: 0
+            top: 0
             right: 0
-            border-radius: 50px 0 50px 0
+            border-radius: 0px 0 30px 0
             z-index: -1
+            
     &__p
         font-size: 1.1em
         text-transform: uppercase
@@ -55,20 +49,14 @@
     .btn-card
         display: flex
         text-decoration: none
-        color: $black
+        color: $white
         position: relative
         font-size: 1.6em
-        &::before
-            content: ""
-            background: #B1E9F0
-            width: 30%
-            height: 140%
-            clip-path: polygon(100% 0, 0% 100%, 100% 100%)
-            transform: rotateZ(295deg)
-            position: absolute
-            left: -19%
-            bottom: -5%
-            z-index: -1
+        background: $blueLight
+        padding: 1rem
+        font-weight: 200
+        font-style: italic
+        border-radius: 5px
 
 ////Grid del card
 .card
@@ -79,27 +67,26 @@
     width: 30%
     margin: 1rem
     &__titulo
-        grid-area: 1 / 1 / 3 / 12
+        grid-area: 1 / 1 / 2 / 12
+        justify-content: flex-start
         align-items: center
-        justify-content: center
         &::after
     &__span
-        grid-area: 1 / 11 / 2 / 13
+        grid-area: 1 / 9 / 2 / 13
         z-index: 1
-        align-self: flex-start
+        justify-self: center
     &__img
         grid-area: 2 / 1 / 8 / 13
         height: 100%
         width: 100%
         object-fit: cover
     &__precio
-        grid-area: 7 / 2 / 9 / 6
+        grid-area: 8 / 1 / 9 / 3
         &::before
     &__p
         grid-area:  9 / 2 / 12 / 13
     .btn-card
-        grid-area: 11 / 9 / 13 / 13
-        align-self: center
+        grid-area: 11 / 8 / 11 / 10
     .ico-cart
         grid-area: 12 / 2 / 13 / 4
     .ico-fav

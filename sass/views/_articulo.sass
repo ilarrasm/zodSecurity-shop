@@ -22,7 +22,7 @@
             letter-spacing: .5rem
         &__H2
             display: flex
-            font-size: 1.9rem
+            font-size: 1.4rem
             font-style: italic
             color: $blue
             word-spacing: .2rem
@@ -46,10 +46,13 @@
                 align-self: flex-start
                 text-transform: uppercase
                 span
-                    padding: 1rem
-                    color: $blue
+                    font-size: .9rem
+                    padding: .4rem
+                    color: $black
                     margin: 0 .2rem
                     border-radius: 30px 0 10px 30px
+                    align-self: flex-start
+
             &__shop
                 display: flex
                 justify-content: space-between
@@ -75,11 +78,11 @@ $pagos: paypal coinpayments
         position: absolute
         right: 40%
         top: 50%
-        width: 30%
+        width: 25%
         border-radius: 50px 1px 50px 1px
         background: $black
         .precioFinal
-            font-size: 2em
+            font-size: 1em
             text-transform: uppercase
             color: $white
             align-self: center
@@ -87,7 +90,7 @@ $pagos: paypal coinpayments
             font-weight: 200
         &__n
             display: flex
-            font-size: 2.8em
+            font-size: 1.3em
             align-self: flex-start
             letter-spacing: .2rem
             font-weight: 700
@@ -95,9 +98,9 @@ $pagos: paypal coinpayments
         &__usd
             display: flex
             font-weight: 500
-            font-size: 1em
+            font-size: .7em
             align-self: flex-end
-            margin-bottom: .7rem
+            margin-bottom: .2rem
             color: $white
     &__cat
         &-a
@@ -185,9 +188,11 @@ $pagos: paypal coinpayments
         color: $blueLight
         filter: drop-shadow(0 0 3px $blueLight)
 .fa-calendar, .fa-truck, .fa-shield-alt
-    font-size: 1.2rem
-    color: $white
-    background: $blueLight
+    font-size: .9rem
+    color: $black
     padding: 1rem
-    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%)
-    border-radius: 20px
+    align-self: center
+.fa-caret-square-right
+    font-weight: 100
+    align-self: center
+    color: $blueLight

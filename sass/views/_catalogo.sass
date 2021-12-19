@@ -1,20 +1,22 @@
 .catalogo
     &__head
-        background: $blue
+        background: $black
         color: $white
+        height: 100%
         &__categorias
             font-size: 3em
             .categoria-activa
                 background: $white
-                color: $blue
+                color: $black
                 padding: 1rem
                 border-radius: 0 50px 0 0
                 text-transform: uppercase
-                font-weight: 900
+                font-weight: 100
             .categoria-inactiva
                 color: $white
                 text-decoration: none
                 text-transform: uppercase
+                font-weight: 100
     &__productos
         display: flex
         flex-wrap: wrap
@@ -23,7 +25,7 @@
     display: flex
     flex-direction: column
     justify-content: center
-    height: 20vh
+    height: 40vh
     padding: 2rem
     h1
         font-size: 4em

@@ -25,6 +25,7 @@
         position: relative
         z-index: 2
         letter-spacing: 2rem
+        margin: 7% 1rem
 
 .slideshow-articulo
     display: flex
@@ -36,9 +37,12 @@
         object-fit: contain
         object-position: 50% 50%
         margin: 2rem
-        cursor: pointer
-.fa-circle
-    font-size: 1.6rem
+    &__card
+        &__H3
+            font-size: 2rem
+            color: $black
+.fa-grip-lines
+    font-size: 3rem
     color: $blue
     margin: 1rem
     opacity: .7
@@ -46,11 +50,12 @@
     &:hover
         color: $blueLight
         text-shadow: 0 0 3px
+        cursor: pointer
 .carrousel-articulo .slideshow-articulo
     transform: translateX(0%)
     transition: .91s
 .activo
-    .fa-circle
+    .fa-grip-lines
         color: $blueLight
         text-shadow: 0 0 10px 
 .puntos
@@ -69,11 +74,15 @@
     overflow: hidden
     background-color: rgb(0,0,0)
     background-color: rgba(0,0,0,0.9)
+    z-index: 5
 .modal-content
     margin: auto
     display: block
     width: 80%
-    max-width: 700px
+    max-width: 1240px
+    position: absolute
+    left: 5%
+    top: 5%
 #caption
     margin: auto
     display: block
@@ -87,8 +96,10 @@
     animation-name: zoom
     animation-duration: 0.6s
 @keyframes zoom 
-  from transform:scale(0)
-  to transform:scale(1)
+  from 
+      transform:scale(0)
+  to 
+      transform:scale(1)
 .close
     position: absolute
     top: 15px

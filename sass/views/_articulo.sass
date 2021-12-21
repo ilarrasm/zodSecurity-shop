@@ -4,11 +4,35 @@
     grid-template-rows: 100% 2fr
 .aside
     grid-area: 1 / 3 / 2 / 4
-    border-left: solid 5px $blue
+    background: $whiteFlor
     border-radius: 5% 0% 0% 3%
     height: 100%
     padding: 1rem
     &__articulo
+        &__price
+            display: flex
+            font-weight: 500
+            justify-content: flex-start
+            margin: .7rem 0
+            width: 100%
+            color: $black
+            &__n
+                display: flex
+                font-size: 1.4em
+                justify-content: center
+                letter-spacing: 0
+                font-weight: 700
+            &__centavos
+                font-size: .7em
+                align-self: flex-end
+                font-weight: 700
+                margin-bottom: .233rem
+            &__usd
+                display: flex
+                font-weight: 500
+                font-size: .6em
+                align-self: flex-end
+                margin-bottom: .233rem
         &__mediosDePago
             margin: 1rem
             display: flex
@@ -18,21 +42,18 @@
             font-style: italic
             display: flex
             color: $black
-            font-size: 3em
-            letter-spacing: .5rem
+            font-size: 2.5em
+            word-spacing: .5rem
+            font-weight: 900
         &__H2
-            display: flex
             font-size: 1.4rem
             font-style: italic
-            color: $blue
-            word-spacing: .2rem
-            letter-spacing: .9rem
-            align-self: flex-start
+            color: $black
             font-weight: 300
             border-radius: 0px 0px 15px 0px
-            border-bottom: solid 5px $blue
             padding: 0 .5rem
-            margin: 1rem
+            margin: 15% 0 1rem 0
+            align-self: center
         &__add
             display: flex
             flex-direction: column
@@ -44,7 +65,6 @@
                 font-size: 1em
                 font-weight: 400
                 align-self: flex-start
-                text-transform: uppercase
                 span
                     font-size: .9rem
                     padding: .4rem
@@ -52,7 +72,8 @@
                     margin: 0 .2rem
                     border-radius: 30px 0 10px 30px
                     align-self: flex-start
-
+                .info
+                    font-size: 1rem
             &__shop
                 display: flex
                 justify-content: space-between
@@ -69,39 +90,6 @@ $pagos: paypal coinpayments
 ///////////////////// MAIIIIN ///////////////
 .main__articulo
     grid-area: 1 / 1 / 2 / 3
-    &__price
-        display: flex
-        font-weight: 500
-        justify-content: center
-        margin: .7rem 0
-        padding: .1rem 1rem
-        position: absolute
-        right: 40%
-        top: 50%
-        width: 25%
-        border-radius: 50px 1px 50px 1px
-        background: $black
-        .precioFinal
-            font-size: 1em
-            text-transform: uppercase
-            color: $white
-            align-self: center
-            margin: 0 1rem
-            font-weight: 200
-        &__n
-            display: flex
-            font-size: 1.3em
-            align-self: flex-start
-            letter-spacing: .2rem
-            font-weight: 700
-            color: $white
-        &__usd
-            display: flex
-            font-weight: 500
-            font-size: .7em
-            align-self: flex-end
-            margin-bottom: .2rem
-            color: $white
     &__cat
         &-a
             color: $blue
@@ -127,9 +115,8 @@ $pagos: paypal coinpayments
     width: 100%
     &__data
         &__H2
-            text-transform: uppercase
-            font-size: 6rem
-            font-weight: 100
+            font-size: 4rem
+            font-weight: 400
             font-style: italic
             letter-spacing: .1rem
             word-spacing: .2rem
@@ -138,14 +125,22 @@ $pagos: paypal coinpayments
             margin: 1%
             width: 90%
             margin-top: 10%
-        &__p
-            font-size: 1.3em
-            width: 80%   
-            margin: 3%
-            font-weight: 300
-            border-radius: 10px 0 10px 0px
-            letter-spacing: .3rem
-            line-height: 2.5rem
+        &__info
+            display: flex
+            &__p
+                font-size: 1.3em
+                width: 80%   
+                margin: 3%
+                font-weight: 300
+                border-radius: 10px 0 10px 0px
+                letter-spacing: 0
+                line-height: 2.1rem
+            &__pic
+                width: 50%
+                height: 100%
+                object-fit: cover
+                object-position: 50% 50%
+                align-self: center
 .price
     display: flex
     align-self: flex-start
@@ -177,6 +172,8 @@ $pagos: paypal coinpayments
     margin: 2rem 0
     text-transform: uppercase
     transition: background .7s
+    user-select: none
+    cursor: pointer
     &:hover
         background: $blueLight
         filter: drop-shadow(0 0 3px $blueLight)
@@ -184,11 +181,15 @@ $pagos: paypal coinpayments
     color: $black
     font-size: 1.8rem
     margin-right: 15%
+    user-select: none
+    cursor: pointer
     &:hover
         color: $blueLight
         filter: drop-shadow(0 0 3px $blueLight)
+    &:checked
+        color: $blueLight
 .fa-calendar, .fa-truck, .fa-shield-alt
-    font-size: .9rem
+    font-size: 1.3rem
     color: $black
     padding: 1rem
     align-self: center

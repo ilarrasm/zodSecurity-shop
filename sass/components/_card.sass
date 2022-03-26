@@ -13,12 +13,11 @@
         font-size: .7em
         font-weight: 400
         color: $white
-        padding: .3rem
-        border-radius: 10px 10px 10px 10px
+        padding: 1rem
+        border-radius: 10px
         align-self: center
         justify-self: center
         text-align: center
-        width: 70%
     &__img
     &__precio
         font-size: 1.6em
@@ -67,7 +66,6 @@
     height: 100%
     width: 30%
     margin: 1rem
-    box-shadow: 3px 3px 3px $black
     overflow: hidden
     &__titulo
         grid-area: 1 / 1 / 2 / 12
@@ -89,9 +87,13 @@
     &__p
         grid-area:  7 / 2 / 8 / 13
     .btn-card
-        grid-area: 8 / 7 / 9 / 9
+        grid-area: 8 / 10 / 9 / 12
         align-self: center
     .ico-cart
         grid-area: 8 / 2 / 9 / 4
     .ico-fav
         grid-area: 8 / 4 / 9 / 6
+.arrow-left::before
+    content: "<"
+.arrow-right::before
+    content: ">"

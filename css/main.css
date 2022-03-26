@@ -37,6 +37,19 @@ h1, h2, h3, h4 {
   word-spacing: 1px;
   letter-spacing: 1px; }
 
+.zodLogo {
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-size: 3em;
+  align-self: center;
+  justify-self: flex-start;
+  font-weight: 500;
+  margin-left: 4%;
+  margin-top: .1%;
+  letter-spacing: .15em;
+  font-style: italic;
+  font-weight: 100; }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -70,7 +83,15 @@ h1, h2, h3, h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; }
+  color: whitesmoke;
+  background: #2E2E2E;
+  margin: 1rem 15rem;
+  border-radius: 5px; }
+  .categoria-page .letter {
+    font-size: .9rem;
+    margin: 1rem; }
+  .categoria-page .active {
+    color: #0E9FBF; }
   .categoria-page span {
     font-size: 2rem;
     margin: .3rem;
@@ -478,12 +499,11 @@ h1, h2, h3, h4 {
     font-size: .7em;
     font-weight: 400;
     color: whitesmoke;
-    padding: .3rem;
-    border-radius: 10px 10px 10px 10px;
+    padding: 1rem;
+    border-radius: 10px;
     align-self: center;
     justify-self: center;
-    text-align: center;
-    width: 70%; }
+    text-align: center; }
   .card__precio {
     font-size: 1.6em;
     color: whitesmoke;
@@ -529,7 +549,6 @@ h1, h2, h3, h4 {
   height: 100%;
   width: 30%;
   margin: 1rem;
-  box-shadow: 3px 3px 3px #2E2E2E;
   overflow: hidden; }
   .card__titulo {
     grid-area: 1 / 1 / 2 / 12;
@@ -549,12 +568,18 @@ h1, h2, h3, h4 {
   .card__p {
     grid-area: 7 / 2 / 8 / 13; }
   .card .btn-card {
-    grid-area: 8 / 7 / 9 / 9;
+    grid-area: 8 / 10 / 9 / 12;
     align-self: center; }
   .card .ico-cart {
     grid-area: 8 / 2 / 9 / 4; }
   .card .ico-fav {
     grid-area: 8 / 4 / 9 / 6; }
+
+.arrow-left::before {
+  content: "<"; }
+
+.arrow-right::before {
+  content: ">"; }
 
 .header-index {
   background-color: #2E2E2E;

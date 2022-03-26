@@ -864,3 +864,31 @@ h1, h2, h3, h4 {
     font-size: 2em;
     margin-left: .5rem;
     font-weight: 100; }
+
+@media (max-width: 712px) {
+  .zodLogo {
+    font-size: 1em; }
+  .banner {
+    height: auto; }
+    .banner h1 {
+      font-size: 1em; }
+    .banner span {
+      font-size: .7em; }
+  .catalogo__head__categorias {
+    font-size: 2em; }
+  .catalogo__head__categorias .categoria-inactiva, .catalogo__head__categorias .categoria-activa {
+    font-weight: 500; }
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .card__span {
+      align-self: flex-end; }
+    .card .btn-card {
+      align-self: flex-end; }
+  .navbar {
+    margin: 0; }
+  .catalogo__productos {
+    padding: 0; }
+  .categoria-page {
+    margin: 0; } }

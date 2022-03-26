@@ -13,13 +13,32 @@
     border-radius: 5px
     .letter
         font-size: .9rem
+        padding: 1rem
         margin: 1rem
+        border-radius: 5px
+        cursor: pointer
+        &:hover
+            background: $blueCyan
     .active
-        color: $blueCyan
+        background: $blueCyan
     span
         font-size: 2rem
         margin: .3rem
         font-weight: 200
 /// articulo
 
-// ASIDEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+.arrow-left
+    &::before
+        content: "<" 
+.arrow-right
+    &::before
+        content: ">"
+.arrow-left, .arrow-right
+    &::before
+        font-size: 1.9rem
+        padding: 1rem
+        margin: 1rem
+        border-radius: 5px
+        cursor: pointer
+    &:hover::before
+        background: $blueCyan

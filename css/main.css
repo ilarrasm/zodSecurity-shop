@@ -89,13 +89,34 @@ h1, h2, h3, h4 {
   border-radius: 5px; }
   .categoria-page .letter {
     font-size: .9rem;
-    margin: 1rem; }
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    cursor: pointer; }
+    .categoria-page .letter:hover {
+      background: #0E9FBF; }
   .categoria-page .active {
-    color: #0E9FBF; }
+    background: #0E9FBF; }
   .categoria-page span {
     font-size: 2rem;
     margin: .3rem;
     font-weight: 200; }
+
+.arrow-left::before {
+  content: "<"; }
+
+.arrow-right::before {
+  content: ">"; }
+
+.arrow-left::before, .arrow-right::before {
+  font-size: 1.9rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.arrow-left:hover::before, .arrow-right:hover::before {
+  background: #0E9FBF; }
 
 .userLog {
   overflow: hidden; }
@@ -574,12 +595,6 @@ h1, h2, h3, h4 {
     grid-area: 8 / 2 / 9 / 4; }
   .card .ico-fav {
     grid-area: 8 / 4 / 9 / 6; }
-
-.arrow-left::before {
-  content: "<"; }
-
-.arrow-right::before {
-  content: ">"; }
 
 .header-index {
   background-color: #2E2E2E;
